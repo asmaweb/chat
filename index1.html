@@ -1,0 +1,46 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome to Chat</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="chat.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+  <input type="hidden" id="CurrentUserId">
+  <input type="hidden" id="CurrentUsername">
+  <input type="hidden" id="MessageType" value="1">
+  <input type="hidden" id="EditId">
+  <input type="hidden" id="Role">
+  <div class="login-wrapper">
+      <div class="register">
+          <input type="text" id="regEmail" placeholder="Register Email">
+          <input type="text" id="usernameReg" placeholder="Register Username">
+          <input type="password" id="regPass" placeholder="Register Password">
+          <input type="password" id="confPass" placeholder="Confirm Password">
+          <input type="button" id="register" value="Register Credentials">
+      </div>
+      <div class="login">
+          <input type="text" id="loginEmail" placeholder="Login Email">
+          <input type="password" id="loginPass" placeholder="Login Password">
+          <input type="button" id="loginButton" value="Login">
+      </div>
+  </div>
+  <div class="logoutUser">
+      <p id="loggedIn"> Logged in as: </p>
+      <input type="button" id="logoutButton" value="Sign Out">
+  </div>
+  <div class="chatSection">
+      <h2 id="title"> Welcome To MY CHAT </h2>
+      <ul id="chatLog"></ul>
+      <input type="text" id="messageBox">
+      <input type="button" id="submitButton" value="Send Message">
+      <button class='btn btn-danger' id='clearChats'>Delete History </button>
+
+      <ul id="userLog"></ul>
+  </div>
+</body>
+
+</html>
